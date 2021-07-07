@@ -1,0 +1,259 @@
+* { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;}
+/* selector universal */
+
+/* gradiente body */
+
+/* inicio header INDEX y Gral */
+header {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    height: 160px;
+    border-bottom: 2px solid #fff;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+    justify-content: space-between;
+}
+
+.header__logo img {
+    display: flex;
+    width: 160px;
+    height: 140px;
+    padding-left: 20px;
+    margin-left: 90 px;
+    margin: auto;
+}
+
+.header__menu {
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 21px;
+    margin-left: 80px;
+
+}
+.header__menu ul {
+    display: flex;
+}
+.header__menu ul li {
+    margin: 0 15px;}
+/* inicio submenu */
+.header__menu ul li ul.submenu {
+    display: none;}
+.header__menu ul li:hover ul.submenu {
+    display: block;
+    position:absolute;
+    line-height: 30px;
+}
+/* fin submenu */
+.header__menu ul li a {
+    text-decoration: none;
+    color:#000;}
+.header__menu ul li a:hover {
+    color: #ff0f62;}
+/* fin header INDEX y Gral*/
+
+/* inicio header VALORES */
+@keyframes loop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+#bienv {
+    display: flex;
+    padding: 20px;
+    margin: 30px;
+    height: 140px;
+    background-image: url("/PROYECTO_FINAL_Hammes_Jeremias/img/valores.PNG");
+    background-size: 850px;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-duration: 3s;
+    animation-name: loop;
+    animation-iteration-count: infinite;
+   
+}
+
+#bienv img {
+    width: 800px;
+    align-self: center;
+    
+}
+/* fin header VALORES */
+
+/* inicio intro INDEX */
+main{
+    display: grid;
+    height: 180px;
+    /* propiedades grid */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 100px 100px 100px 100px */
+    grid-template-rows: 20px 10px 10px;
+    grid-gap: 40px;
+    /* fin propiedades de grid */
+    margin: 120px;
+}
+
+.item {
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    grid-row: 1;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    border-style: solid;
+    border-color: #00b1ff;
+    border-width: medium;
+    border-radius: 8px;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, white,#00b1ff);
+
+}
+.item h2 {
+    font-size: 25px;
+}
+.item:hover {
+    transform: translate(10px,10px);
+}
+
+
+/* fin intro INDEX */
+
+
+
+
+/* inicio CLIENTES */
+
+#bottomSection {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 250px 200px 1000px 200px 250px;
+    grid-template-rows: 100px 100px 100px;
+    background-size: 850px;
+
+
+}
+.bottom1 {
+    display: grid;
+    height: 80%;
+}
+/* fin CLIENTES */
+
+/* inicio seccion MAPA y datos */
+#mapa {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin: 30px;
+    margin-right: 200px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url("/PROYECTO_FINAL_Hammes_Jeremias/img/clientes.PNG");
+    
+}
+#mapa iframe {
+    height: 300px;
+}
+#mapa ul li {
+    display: flex;
+    justify-content: space-around;
+
+}
+#mapa a {
+    text-decoration: none;
+    color:#000;
+}
+#mapa a:hover {
+    color: #ff0f62;
+}
+/* FIN seccion MAPA y datos */
+
+
+
+/* inicio footer INDEX y Gral*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    height: 80px;
+    padding-top: 30px;
+    background-color: #003085;
+    color: white;
+    align-content: space-between;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 13px;
+}
+#divisor {
+    width: 30px;
+    height: 25px;
+    text-align: center;
+
+}
+
+/* fin footer INDEX y Gral*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************************* */
+
+
+
+
+
+
+
+
+
+/*  inicio iso ACERCA DE*/
+#sectionIso {
+    height: 600px;
+    background-color: cornflowerblue;
+   
+}
+section #tituloIso h2{
+    text-align: center;
+    font-weight: bold;
+}
+section #cuerpoIso {
+    padding: 50px;
+    text-align: justify;
+    line-height: 25px;
+}
+section #cuerpoIso h2{
+    text-align: center;
+    font-style: bold;
+    font-size: 30px;
+    padding: 50px;
+}
+/* fin iso ACERCA DE */
+section #cuerpoIso p {
+    padding: 60px;
+    margin-left: 250px;
+    margin-right: 250px;
+    
+    text-align: justify;
+    
+}
