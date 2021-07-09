@@ -73,7 +73,7 @@ header {
     padding: 20px;
     margin: 30px;
     height: 140px;
-    background-image: url("/PROYECTO_FINAL_Hammes_Jeremias/img/valores.PNG");
+    background-image: url("../img/valores.PNG");
     background-size: 850px;
     background-repeat: no-repeat;
     background-position: center;
@@ -159,7 +159,7 @@ main{
     background-size: 900px;
     background-repeat: no-repeat;
     background-position: top right;
-    background-image: url("/PROYECTO_FINAL_Hammes_Jeremias/img/clientes.PNG");
+    background-image: url("../img/clientes.PNG");
     
 }
 #mapa iframe {
