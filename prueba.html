@@ -1,0 +1,421 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Aspectos Básicos de la Seguridad en Aplicaciones Web | Documentos - CSI -</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta http-equiv="Vary" content="Accept-Encoding">
+	<meta property="fb:admins" content="572144752"/>
+	<meta property="fb:app_id" content="217582688303467"/>
+	<meta property="og:type" content="appsunamcert:comment"> 
+	<link rel="shortcut icon" href="/historico/vistas/img/icon/dsc.ico">
+	<link rel="alternate" type="application/rss+xml" href="/historico/xml.dsc-arch=noticias_dsc" title="Noticias de Seguridad en Computo">
+	<link rel="alternate" type="application/rss+xml" href="/historico/xml.dsc-arch=vulne_dsc" title="Vulnerabilidades de Seguridad en Computo">
+	<link rel="alternate" type="application/rss+xml" href="../xml.dsc-arch=bol_unam-cert" title="Boletines de Seguridad en Computo, UNAM-CERT">
+    <link rel="alternate" type="application/rss+xml" href="../xml.dsc-arch=documentos_dsc" title="Documentos publicados por la CSI/UNAM-CERT">
+    		<link href="/historico/vistas/css/all/layoutDSC.css" rel="stylesheet" type="text/css" media="screen">	
+	<!--[if IE]>
+		<link href="/vistas/css/all/ie_fix.css" rel="stylesheet" type="text/css" media="screen">
+	<![endif]-->
+	
+	<!--[if lte IE 6]>
+		<link href="/historico/vistas/css/all/ie6_main.css" rel="stylesheet" type="text/css" media="screen">
+	<![endif]-->
+	
+	<!--[if IE 7]>
+	<style type="text/css">
+	#submenu li		{width:130px;padding:0;display:inline;}
+	</style>
+	<![endif]-->
+			<script src="/historico/vistas/js/jquery.min.js" type="text/javascript"></script>		<script src="/historico/vistas/js/anuncios.js" type="text/javascript"></script>		
+</head>
+
+<body id="seguridad">
+	<!-- aqui estaba la cabecera -->
+			
+	<!-- Cabecera -->
+        <div id="header_n">
+        </div>
+	<div id="header">
+		<div id="navegador">
+		    <!--<div id="unam">
+			<a href="http://www.unam.mx/"><img id="logHead_unam" src="/historico/vistas/img/tema/logTop-unam.png" alt="Universidad Nacional Autonoma de Mexico" width="50px"></a>
+		    </div>-->
+		    
+			<ul class="explorer">
+				<li><a class="main" href="/historico/index.html" name="menu"><span>CSI</span><small>Coordinación de Seguridad de la Informacón</small></a></li>  
+				<li><a class="cert" href="/historico_cert/index.html" name="menu"><span>UNAM-CERT</span><small>Equipo de Respuesta a Incidentes</small></a></li>
+				<li><a class="usuarios" href="../usuario-casero.1"><span>Usuario Casero</span><small>Seguridad en tu idioma</small></a></li>
+				<li><a class="becarios" href="../plan-becarios/index.html" name="menu"><span>Becarios</span><small>Programa de Formación en TI</small></a></li>
+				<li><a class="segtv" href="http://www.youtube.com/SeguridadTV/" target="_blank" name="menu"><span>Seguridad TV</span><small>Videos de Seguridad Informática</small></a></li>
+				<li><a class="revista" href="http://revista.seguridad.unam.mx/" name="menu"><span>.Seguridad</span><small>Cultura de prevención para TI</small></a></li>
+			</ul>
+		</div>
+		
+		<div class="siguenos">
+			<a class="twitter" href="http://www.twitter.com/unamcert">twitter</a>
+			<a class="facebook" href="http://www.facebook.com/pages/Ciudad-Universitaria-Mexico/Seguridad-de-la-InformacionUNAM-CERT/152128998135259">facebook</a>
+		</div>
+		
+				
+		<!--<div class="redsoc" style="position:absolute;bottom:8px;right:130px">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="unamcert" data-lang="es">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+		</div>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) {return;}
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/es_MX/all.js#appId=217582688303467&xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>-->
+		
+		
+		<div class="fb-like" data-href="/historico/documento-id=17" data-send="false" data-layout="button_count" data-width="98" data-show-faces="true" data-action="recommend" data-font="trebuchet ms" style="position:absolute;bottom:34px;right:130px"></div>
+					<!-- <a href="http://www.100.unam.mx/"><img id="logoHead100" src="/historico/vistas/img/tema/logoHead_100.png" alt="100 aï¿½os UNAM" width="90px"></a>
+			<img id="logoHeadISO27001" src="/historico/vistas/img/tema/logoHead-ISO27001.png" alt="EQA ISO 27001" height="52px"> -->
+	</div>
+<!-- Termina cabecera de navegaciï¿½n -->
+	<!-- Inicia cuerpo principal de la pï¿½gina -->
+	<div id="cuerpo">
+	<div class="prin_cabeza">
+		<!--<a href="/historico/"><img class="fleft" src="/historico/vistas/img/tema/logossi.png" alt="Coordinación de Seguridad de la Información" height="80px"></a>
+		<h1>Coordinación de <b>S</b>eguridad de la Información</h1>
+		<p>Información y servicios de seguridad en cómputo</p>-->
+					<!--<div class="anuncios">
+				<div class="main_view">-->
+					<!--<div class="window">
+						<div class="image_reel"> -->
+											<!--	</div>
+					</div>-->
+					<div class="paging">
+						<a href="index.html-id=17#" rel="1">1</a>
+						<a href="index.html-id=17#" rel="2">2</a>
+						<a href="index.html-id=17#" rel="3">3</a>
+						<a href="index.html-id=17#" rel="4">4</a>
+						<a href="index.html-id=17#" rel="5">5</a>
+						<a href="index.html-id=17#" rel="6">6</a>
+						<!-- <a href="#" rel="7">7</a> -->
+						<!-- <a href="#" rel="8">8</a> -->
+					</div>
+			<!--	</div>
+			</div>-->
+			<form id="buscarMain" class="fright" action="/historico/buscar/" method="GET">
+				<input class="text" type="text" name="q" size="36" maxlength="40">
+				<input class="submit" type="submit" value="buscar">
+			</form>
+			</div>
+
+	<ul id="submenu">
+					<li ><a href="/historico/index.html" class="menu  primero">CSI</a></li>
+					<li ><a href="../noticia" class="menu ">Noticias</a></li>
+					<li class="current"><a href="../documento" class="menu ">Documentos</a></li>
+					<li ><a href="../vulnerabilidadesDB" class="menu ">Vulnerabilidades</a></li>
+					<li ><a href="../eventos" class="menu ">Eventos</a></li>
+					<li ><a href="/historico/ponencias" class="menu ">Ponencias</a></li>
+			</ul>
+			<!-- <a class="wrapper" href="http://www.cert.org.mx/"><img id="logoHeadCERT" src="/historico/vistas/img/tema/logo-cert.png" alt="Equipo de Respuesta a Incidentes de Seguridad Informática" height="50px"></a>-->
+		
+	<div class="seccion_prin">         <div class="seccion doc">
+<div class="cabeza_seccion">
+            <h2 class="titulos">Aspectos Básicos de la Seguridad en Aplicaciones Web </h2>
+          </div>
+            <div class="cuerpo_seccion">
+            <div class="cuerpo"><div>&nbsp;</div>
+<div><strong style="line-height: 20.4px;">Introduccion a la seguridad en sistemas web</strong></div>
+<p style="text-align: justify;"><span style="line-height: 20.4px;">En la actualidad el crecimiento de internet ha impactado directamente en la seguridad de la información manejada cotidianamente. Sitios de comercio electrónico, servicios, bancos e incluso redes sociales contienen información sensible que en la mayoría de los casos resulta ser muy importante.</span></p>
+<p style="text-align: justify;">Se puede decir que uno de los puntos más críticos de la seguridad en Internet son las herramientas que interactúan de forma directa con los usuarios, en este caso los servidores web. Es común escuchar sobre fallas en los sistemas de protección de los servidores más frecuentemente utilizados, por ejemplo Apache, NGINX, IIS, etc.<a href="http://trends.builtwith.com/Web-Server">&nbsp;(Build With, 2016)</a> O en los lenguajes de programación en que son escritas las aplicaciones. Sin embargo, la mayoría de los problemas detectados en servicios web no son provocados por fallas de ninguna de estas partes, si no que los problemas se generan por malas prácticas de parte de los programadores.</p>
+<p style="text-align: justify;">Debemos entender que programar aplicaciones web seguras no es una tarea fácil, ya que requiere por parte del programador, no sólo cumplir con el objetivo funcional básico de la aplicación, sino una concepción general de los riesgos que puede correr la información procesada por el sistema.</p>
+<p><strong style="line-height: 20.4px;">1. Problemas principales en la programación de sistemas web</strong></p>
+<p>Gran parte de los problemas de seguridad en las aplicaciones web son causados por la falta de seguimiento en dos rubros muy importantes de los que depende cualquier aplicación, las entradas y salidas del sistema. Ver Ilustración 1.</p>
+<p style="text-align: center;"><img alt="" src="https://www.seguridad.unam.mx/img/ilustracion1.png" style="width: 808px; height: 195px;" /></p>
+<p align="center"><em>Ilustración 1. Entrada y salida del sistema.</em></p>
+<p style="text-align: justify;">Además de verificar estos 2 rubros, es importante considerar la exposición accidental de datos que pueden ser empleados en un posible ataque sobre el sistema. Los mensajes de error enviados por el servidor, que suelen ser de gran utilidad durante el proceso de desarrollo de la aplicación, pueden ser empleados maliciosamente cuando siguen apareciendo en un entorno de producción, por lo que es necesario deshabilitar todos estos mensajes y editar algunos otros (como los que se envían cuando el servidor no encuentra algún archivo en particular) los cuales también pueden ser utilizados por los atacantes para obtener información sobre nuestro sistema.&nbsp;</p>
+<h4><font face="Verdana, sans-serif"><span style="font-size: 12px;"><b>2. Prácticas básicas de seguridad web</b></span></font></h4>
+<p><span><strong>2.1 Balancear riesgo y usabilidad</strong></span></p>
+<p style="text-align: justify;">Si bien la usabilidad y la seguridad en una aplicación web no son excluyentes una de la otra, alguna medida tomada para incrementar la seguridad con frecuencia afecta la usabilidad. Normalmente siempre se debe pensar en las maneras en que usuarios ilegítimos nos pueden atacar y la facilidad de uso para los usuarios legítimos.</p>
+<p style="text-align: justify;">Es conveniente emplear medidas de seguridad que sean transparentes a los usuarios y que no resulten engorrosas en su empleo. Por ejemplo, el uso de un <em>login</em> que solicita el nombre de usuario y contraseña (Ilustración 2.), permite controlar el acceso de los usuarios hacia secciones restringidas de la aplicación. Este paso adicional, es una característica que impacta en la rapidez de acceso a la información por parte del usuario, pero que proporciona un elemento adicional de protección.</p>
+<p style="text-align: justify;">A mayor complejidad de nuestro sitio, aumenta el riesgo de que se sufra un ataque debido a sus características más elaboradas, es por eso que deben considerarse opciones de seguridad necesarias y sencillas pero eficientes, que ayuden a mitigar cualquier característica que la haga vulnerable.</p>
+<p style="text-align: center;"><em style="line-height: 20.4px; text-align: -webkit-center;">&nbsp;</em><img alt="" src="https://www.seguridad.unam.mx/img/ilustracion2.png" style="line-height: 20.4px; text-align: justify; width: 305px; height: 220px;" /><em style="line-height: 20.4px; text-align: -webkit-center;">&nbsp;</em></p>
+<p style="text-align: center;"><em style="line-height: 20.4px; text-align: -webkit-center;">Ilustr</em><em style="line-height: 20.4px; text-align: -webkit-center;">ación 2.</em><em style="line-height: 20.4px; text-align: -webkit-center;">&nbsp;</em><span style="line-height: 20.4px;"><em>Login</em> <em>como medida de&nbsp;</em></span><em style="line-height: 20.4px;">seguridad.</em></p>
+<p><span><strong>2.2 Rastrear el paso de los datos</strong></span></p>
+<p style="text-align: justify;">Es muy importante mantener conocimiento de los pasos que ha recorrido la información en todo momento. Conocer de dónde vienen los datos y hacia dónde van. En muchas ocasiones lograr esto puede ser complicado, especialmente sin un conocimiento profundo de cómo funcionan las aplicaciones web.</p>
+<p style="text-align: justify;">En las aplicaciones web, existen maneras de distinguir los orígenes de los datos y poder así reconocer cuando los datos pueden ser dignos de confianza y cuando no.</p>
+<p style="text-align: justify;">Normalmente existen arreglos globales en la aplicación (por ejemplo en PHP los arreglos <strong>$_GET, &nbsp;$_POST, $_COOKIE&nbsp;</strong>y<strong> $_SESSION</strong> entre otros) que sirven para identificar de forma clara las entradas proporcionadas por el usuario. Si esto lo combinamos con una convención estricta para el nombrado de las variables podemos tener un control sobre el origen de los datos usados en el código.</p>
+<p style="text-align: justify;">Además de entender los orígenes de la información se debe dar la misma importancia a entender cuáles son las salidas que tiene la aplicación y hacia a donde se devuelven los resultados.</p>
+<p><span><strong>2.3 Filtrar entradas</strong></span></p>
+<p style="text-align: justify;">El filtrado es una de las piedras angulares de la seguridad en aplicaciones web. Es el proceso por el cual se prueba la validez de los datos. Si nos aseguramos que los datos son filtrados apropiadamente al entrar, podemos eliminar el riesgo de que datos contaminados sean usados para provocar funcionamientos no deseados en la aplicación.</p>
+<p style="text-align: justify;">Existen muchos puntos de vista diferentes sobre cómo realizar el filtrado o proceso de limpieza. Lo que usualmente se recomienda es ver al filtrado como un proceso de inspección, no debemos tratar de corregir los datos, es mejor forzar a los usuarios a jugar con las reglas válidas.</p>
+<p style="text-align: justify;">Al usar listas blancas asumimos que los datos son inválidos a menos que prueben ser validos al encontrarse patrones coincidentes. Una limitante de usar este punto de vista es considerar inválidos datos que debieron considerarse válidos pero que no fueron tomados en cuenta patrones similares al construir la lista blanca.</p>
+<p style="text-align: justify;">Si llegamos a utilizar algún <em>framework</em> se debe tener especial cuidado, ya que estos brindan tantas comodidades que muchos desarrolladores inexpertos los utilizan sin preocuparse en entender el código que están observando y por lo tanto implementan medidas de validación en entradas, variables, entre otros, sin entender exactamente el funcionamiento de la solución empleada.</p>
+<p style="text-align: justify;">Es importante notar que en los lenguajes de programación existen una buena cantidad de filtros pero evidentemente estos no llegan a cubrir&nbsp; todas las necesidades que puede tener un desarrollador. En este caso, se llegan a utilizar funciones creadas y adaptadas a nuestras necesidades a modo de filtro especial, en la mayoría de estos casos es donde se puede encontrar el uso de expresiones regulares.</p>
+<p style="text-align: justify;">En la Ilustración 3 tenemos un ejemplo en PHP de variables <strong><em>GET </em></strong>sanitizadas mediante una función la cual valida que únicamente sean números enteros (FILTER_SANITAZE_NUMBER_INT) y no contengan etiquetas <strong><em>HTML</em></strong> (strip_tags).</p>
+<p style="text-align: center;"><img alt="" src="https://www.seguridad.unam.mx/img/ilustracion3.png" style="width: 882px; height: 38px;" /></p>
+<p style="text-align: center;"><em>Ilustración 3. Filtrado avanzado usando funciones de PHP.</em></p>
+<p>&nbsp;</p>
+<p>Una vez concluido el paso del filtrado solo resta usar convenciones apropiadas en el nombramiento de las variables para poder distinguir las que ya han sido filtradas.&nbsp;</p>
+<p><strong>2.4 Escapado de salidas</strong></p>
+<p style="text-align: justify;">Otro punto importante de la seguridad es el proceso de escapado y su contraparte para codificar o decodificar caracteres especiales de tal forma que su significado original sea preservado. Si llegamos a utilizar una codificación en particular es necesario conocer los caracteres reservados los cuales serán necesarios escapar.</p>
+<p style="text-align: justify;">El proceso de escapado debe estar compuesto a su vez por los siguientes pasos:</p>
+<ul>
+	<li style="text-align: justify;">Identificar las salidas.</li>
+	<li style="text-align: justify;">Escapar las salidas.</li>
+	<li style="text-align: justify;">Distinguir entre datos escapados y no escapados.</li>
+</ul>
+<p style="text-align: justify;">El proceso de escapado debe adecuarse al tipo de salida de que se trate (si es al cliente, a la base de datos, etcétera). Para la mayoría de los destinatarios, existen funciones nativas en los lenguajes de programación para esta finalidad. En alguno de los casos como podría ser el de base de datos es importante incluso observar la codificación en la que son enviados.</p>
+<p style="text-align: justify;">Para distinguir entre los datos que han sido escapados de los que no, es recomendable también usar una convención de nombres. Es necesario una función de escapado para cada caso, como ejemplo en PHP se tomarían las siguientes consideraciones para:</p>
+<ul>
+	<li style="margin-left: 36pt; text-align: justify;">Correo electrónico, se puede usar la función filter_var() con los argumentos de FILTER_VALIDATE_EMAIL.</li>
+	<li style="margin-left: 36pt; text-align: justify;">Bases de datos SQL, es más recomendable utilizar consultas parametrizadas pero podríamos utilizar mysql_real_escape_string.</li>
+	<li style="margin-left: 36pt; text-align: justify;"><span style="line-height: 20.4px; background-color: transparent;">Líneas de comandos, se puede hacer uso de la&nbsp;función&nbsp;</span><em style="line-height: 20.4px; background-color: transparent;">escapeshellarg()</em><span style="line-height: 20.4px; background-color: transparent;">.</span></li>
+	<li style="margin-left: 36pt; text-align: justify;">Código en Javascript, PHP no tiene un método incorporado para escaparlo, pero se puede utilizar <em>json_encode()</em>&nbsp;junto con&nbsp;<em>htmlspecialchars()</em>&nbsp;si se quiere mostrar en HTML.</li>
+</ul>
+<h4 style="font-size: 15.6px; line-height: 20.4px;"><font face="Verdana, sans-serif"><span style="font-size: 12px;"><b>3. Clasificacion de ataques web.</b></span></font></h4>
+<p><strong>3.1 Ataques URL de tipo semántico</strong></p>
+<p style="text-align: justify;"><span style="line-height: 20.4px;">Este tipo de ataques involucran a un usuario modificando la URL a modo de descubrir acciones a realizar que originalmente no están planeadas para ser manejadas correctamente por el servidor. La implementación de cualquier formulario debe contemplar validaciones necesarias para evitar el esas acciones y se deben realizar adecuaciones de acuerdo a nuestras entradas, en la ilustración 5 se muestra un formulario de </span><em style="line-height: 20.4px;">login</em><span style="line-height: 20.4px;"> con campos de usuario y contraseña.</span></p>
+<p style="text-align: center;"><span style="line-height: 20.4px;"><img alt="" src="https://www.seguridad.unam.mx/img/ilustracion4.png" style="width: 800px; height: 234px;" /></span></p>
+<p style="text-align: center;"><em><span style="line-height: 20.4px;">Ilustración 4. Formulario con envio de datos por metodo GET</span></em></p>
+<p style="text-align: justify;"><span style="line-height: 20.4px;">En el ejemplo anterior los parámetros, que son enviados con el método GET, se agregan directamente en la URL, lo que produce que atacantes inexpertos puedan utilizarlos, ya que son solo un poco más fáciles de capturar y modificar que los enviados de forma oculta desde el navegador (POST). Un ejemplo del envío por GET es el de la ilustración 5.</span></p>
+<p style="text-align: center;"><span style="line-height: 20.4px;"><img alt="" src="https://www.seguridad.unam.mx/img/ilustracion5.png" style="width: 650px; height: 50px;" /></span></p>
+<p style="text-align: center;"><em><span style="line-height: 20.4px;">Ilustración 5. URL con parámetros enviados visibles.</span></em></p>
+<p><strong>3.2&nbsp;</strong><strong style="line-height: 20.4px;">&nbsp;Ataques de Cross-Site Scripting</strong></p>
+<p style="text-align: justify;"><span style="line-height: 20.4px;">Cross-Site Scripting (XSS) es un tipo de vulnerabilidad de seguridad informática típicamente encontrada en aplicaciones web que permiten la inyección de código por usuarios maliciosos en páginas web. Los atacantes típicamente se valen de código HTML y de scripts ejecutados en el cliente. (<a href="https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_(XSS)">OWASP, 2014</a>)</span></p>
+<p style="text-align: center;"><img alt="" src="https://www.seguridad.unam.mx/img/ilustracion6.png" style="width: 650px; height: 372px;" /></p>
+<p align="center"><em>Ilustración 6. Definición general de los tipos de XSS. (<a href="/historico/documento-id=35">Domínguez, 2015</a>)</em></p>
+<p><strong>3.3&nbsp;</strong><strong style="line-height: 20.4px;">Ataques de Cross-Site Request Forgery</strong></p>
+<p style="text-align: justify;">Este tipo de ataque permite al atacante enviar peticiones HTTP a voluntad desde la máquina de la víctima. <ins cite="mailto:Angie%20Aguilar%20de%20Dominguez" datetime="2016-02-09T12:23">E</ins>s difícil determinar cuándo una petición HTML se ha originado por un ataque de este tipo.</p>
+<p style="text-align: justify;">Cuando un atacante conoce el formato que debe tener una URL para lograr la ejecución de una acción en el sistema, ha logrado encontrar la posibilidad de explotar este tipo de ataques. Ahora lo que necesita el atacante es simplemente hacer que una víctima visite la URL.</p>
+<p style="text-align: justify;">Un recurso que se utiliza comúnmente para realizar este tipo de ataques suele tener embebida la petición en una imagen. En este caso el atacante sólo necesita crear alguna etiqueta HTML del siguiente tipo:</p>
+<p><strong><em>&lt;img src=&quot;http://ejemplo.org/compra.php-param=valor&amp;param2=valor&quot; /&gt;</em></strong></p>
+<p style="text-align: justify;">Existen acciones que podemos tomar para contrarrestar este tipo de ataques, una de estas es preferir el método POST para el procesamiento de formas en lugar del GET, otra posibilidad es solicitar confirmación por parte del solicitante antes de realizar los procesos (a costa de reducir la usabilidad en la aplicación).</p>
+<p><strong>3.4&nbsp;</strong><strong style="line-height: 20.4px;">Peticiones HTTP falsificadas</strong></p>
+<p style="text-align: justify;">Un ataque más sofisticado que el anterior es enviar peticiones falsas empleando herramientas especiales para este propósito.</p>
+<p style="text-align: justify;">Para ello, se emplean herramientas de línea de comandos o plugins agregados a los navegadores, con estos se pone a la escucha de los servicios web que típicamente se conectan a través del puerto 80. En la ilustración 7 podemos observar los campos que pueden modificarse con Tamper Data.</p>
+<p style="text-align: center;"><img alt="" src="https://www.seguridad.unam.mx/img/ilustracion7.PNG" style="line-height: 20.4px; text-align: center; width: 450px; height: 266px;" /></p>
+<div>
+	<div style="text-align: center;"><em style="line-height: 20.4px;">Ilustración 7. Headers interceptados.</em></div>
+	<p style="text-align: justify;"><span style="line-height: 20.4px;">En realidad un atacante puede confeccionar a gusto sus peticiones HTTP, la fortaleza de nuestro sistema será medible por su capacidad de detectar que peticiones recibidas deben ser escuchadas y procesadas de acuerdo a los parámetros y valores que se vayan a recibir.</span></p>
+	<p><strong>4. Seguridad de las aplicaciones y su relación con las bases de datos</strong></p>
+	<p style="text-align: justify;">La mayoría de las aplicaciones web son usadas como un conducto entre fuentes de información y el usuario, esto es, las aplicaciones web son usadas para interactuar con una base de datos.</p>
+	<p style="text-align: justify;">Muchos programadores no dan importancia al filtrado de datos provenientes de una consulta a la base de datos, debido a que consideran a esta fuente como confiable. Aunque el riesgo a primera vista parecería menor, es una práctica recomendable no confiar en la seguridad de la base de datos e implementar la seguridad a fondo y con redundancia. De esta manera, si algún dato malicioso fue inyectado a la base de datos, nuestra lógica de filtrado puede percatarse de ello.&nbsp;</p>
+	<p><strong>4.1 Exposición de Credenciales de Acceso</strong></p>
+	<p style="text-align: justify;">Uno de los asuntos principales a ser cuidados cuando se utiliza una base de datos es el almacenamiento de las credenciales de acceso a ella.</p>
+	<p style="text-align: justify;">Los datos de usuario y password son considerados sensibles, por lo que deben tener garantizada una atención especial. En archivos de configuración es común encontrar estos datos los cuales se encuentran como texto en claro. Ver ilustración 8.</p>
+	<p style="text-align: center;"><img alt="" src="https://www.seguridad.unam.mx/img/ilustracion8.png" style="width: 650px; height: 194px;" /></p>
+	<p align="center"><em>Ilustración 8. Código PHP con contraseñas de acceso a base de datos.</em></p>
+	<p style="text-align: justify;"><span style="line-height: 20.4px;">La intercepción o acceso no autorizado de esta información podría comprometer los servidores de bases de datos o &nbsp;gestores de contenidos en donde estén alojados. Si por alguna razón no fuera posible localizar al archivo que contiene esta información fuera del directorio raíz, es necesario configurar el servidor web para rechazar las peticiones de recursos que no deben ser accesibles.</span></p>
+	<p><strong>4.2 SQL Injection</strong></p>
+	<p style="text-align: justify;">La inyección de código SQL es la vulnerabilidad número uno en el top de OWASP (<a href="https://www.owasp.org/index.php/Top_10_2013-Top_10">OWASP, 2015</a>). Para que exista una vulnerabilidad de SQL Injection se requieren dos fallas por parte del programador:</p>
+	<ol>
+		<li style="margin-left: 36pt; text-align: justify;">Fallas en el filtrado de los datos.</li>
+		<li style="margin-left: 36pt; text-align: justify;"><span style="line-height: 20.4px;">Fallas en el escapado de los datos al enviarlos a la base de datos (escapado de salida).</span></li>
+	</ol>
+	<p style="margin-left: 36pt; text-align: center;"><span style="line-height: 20.4px;"><img alt="" src="https://www.seguridad.unam.mx/img/ilustracion9.png" style="width: 530px; height: 247px;" />-</span></p>
+	<p style="margin-left: 36pt; text-align: center;"><em><span style="line-height: 20.4px;">Ilustración 9. Descripción básica de SQL Injection.</span></em></p>
+	<p style="text-align: justify;"><span style="line-height: 20.4px;">Ninguno de estos pasos cruciales debe ser omitido, y los dos pasos requieren especial atención para poder minimizar los errores. Afortunadamente los ataques de SQL Injection son fácilmente evitables, mientras filtremos y escapemos las salidas.&nbsp;</span></p>
+	<p><strong>4.3 Exposición de datos</strong></p>
+	<p style="text-align: justify;">Una de las preocupaciones más comunes relacionadas con las bases de datos es la exposición de datos sensibles. Al almacenar números de tarjetas de crédito, por ejemplo, es preferible asegurarse que los datos almacenados en la base de datos se encuentran seguros e inaccesibles incluso para los administradores de la base.</p>
+	<p style="text-align: justify;">Para asegurar que no se almacenan datos como texto en claro en la base de datos<ins cite="mailto:Angie%20Aguilar%20de%20Dominguez" datetime="2016-02-10T11:57">,</ins> se pueden realizar procedimientos de <em>hash</em><ins cite="mailto:Angie%20Aguilar%20de%20Dominguez" datetime="2016-02-10T11:57"> a</ins> las cadenas almacenadas para que no sea entendible la información a simple vista. Se debe considerar el costo de esta implementación ya que habría que obtener el <em>hash</em> al insertarlo y al extraerlo realizar la operación inversa, lo que conllevaría a que la aplicación tarde un poco más en responder.</p>
+	<p><strong style="line-height: 20.4px;">5. Páginas privadas y los sistemas de autenticación</strong></p>
+	<p style="text-align: justify;">La autenticación consiste en verificar la identidad de un usuario. Comúnmente el procedimiento involucra un nombre de usuario y una contraseña a revisar. Muchas aplicaciones tienen recursos que son accesibles sólo para los usuarios autenticados<ins cite="mailto:Angie%20Aguilar%20de%20Dominguez" datetime="2016-02-10T11:59">,</ins> así como recursos totalmente públicos.</p>
+	<p><strong>5.1 Ataques de fuerza bruta</strong></p>
+	<p style="text-align: justify;">Este tipo de ataque es un método de ensayo y error utilizado para obtener información de una contraseña, clave o número de identificación personal, entre otros. Funciona mediante la generación de un gran número de intentos consecutivos para el valor de los datos deseados. Un ataque de este tipo agota todas las posibilidades sin preocuparse por cuales opciones tienen mayor probabilidad de funcionar.</p>
+	<p style="text-align: justify;">En los términos del control de acceso, generalmente encontramos al atacante intentando ingresar mediante un gran número de pruebas. En algunos casos el atacante puede conocer nombres de usuario válidos y la contraseña es la única parte que se trata de adivinar.</p>
+	<p><strong>5.2 Espionaje de contraseñas (Password Sniffing)</strong></p>
+	<p style="text-align: justify;">Cuando un atacante tiene los medios para analizar el tráfico entre los usuarios y el servidor de la aplicación, debemos preocuparnos por la exposición que pueden tener los datos en el trayecto, sobre todo cuando se trata de credenciales de acceso.</p>
+	<p style="text-align: center;"><img alt="" src="https://www.seguridad.unam.mx/img/ilustracion10.PNG" style="width: 700px; height: 269px;" /></p>
+	<p align="center"><em>Ilustración 10. Captura de tráfico HTTP con contraseña enviada en claro.</em></p>
+	<p style="text-align: justify;">En la actualidad debido a la información que se transmite en la web se recomienda establecer el uso del protocolo HTTPS para poder cifrar el canal de comunicación por el que enviaremos nuestra información.&nbsp;(<a href="https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet">OWASP, 2016</a>)</p>
+	<p><strong>5.3 Cookies o variables de sesión persistentes</strong></p>
+	<p style="text-align: justify;">Cuando un usuario permanece en el estado de registrado después de un tiempo no razonable (por ejemplo, cuando no expira la sesión), tenemos un problema de registros persistentes.</p>
+	<p style="text-align: justify;">Este tipo de problemas disminuyen la seguridad de nuestro mecanismo de autenticación. Generalmente son causados por una cookie persistente, un ticket enviado al usuario o alguna variable de sesión establecida que no se considera como expirado jamás o que no cambia en cada nuevo registro establecido por el usuario.</p>
+	<p style="text-align: justify;">Las cookies permanentes y variables de sesión ayudan a los sitios web a recordar tu información y ajustes cuando los visitas más adelante. Esto conlleva un acceso más rápido y sencillo ya que, por ejemplo, no tienes que iniciar sesión de nuevo.</p>
+	<p><strong>6. Conclusiones</strong></p>
+	<p style="text-align: justify;">La seguridad en aplicaciones Web involucra principalmente al desarrollador, aunque con gran frecuencia se encuentran defectos que pueden ser aprovechados por atacantes en las tecnologías en que se basan los sistemas web (Sistemas Operativos, Servidores Web, Servidor de Base de Datos, etc.) la atención principal debe dirigirse a los defectos propios al desarrollo nuestras aplicaciones.</p>
+	<p style="text-align: justify;">Todo programador debe estar consciente que el manejo de las peticiones, para aceptarlas o rechazarlas, deben estar &nbsp;los datos o variables recibidas no cumplan con las características esperadas o predefinidas. Todas las entradas del sistema deben pasar por el filtrado de los datos contenidos para confirmar su usabilidad. Además para el programador debe ser claro y fácil de identificar cuando una variable ya ha sido sometida al proceso de limpieza, de esta forma evitaremos tener que confiar en la memorización o tener que hacer un mapa de los procesos ejecutados por cada línea de código ejecutada de manera previa.</p>
+	<p style="text-align: justify;">Otro aspecto importante a considerar son los procesos de salida de la información del sistema. Es importante siempre considerar el significado que pueda tener la información enviada en su nuevo contexto, y en el caso de poder crear problemas de interpretación de las salidas, escaparlas para preservarlas. Al igual que en el proceso de filtrado, es importante mantener un control sobre la codificación que tienen los datos antes de enviarlos a su nuevo contexto.</p>
+	<p style="text-align: justify;">Para mayor información y como solucionar los problemas antes mencionados les recomendamos seguir las Sugerencias de Seguridad para Sitios Web (<a href="/historico/documento-id=1143">Aguilar &amp; Hernández, 2014</a>)</p>
+	<p><strong>7. Referencias</strong></p>
+	<p style="margin-left:36.0pt;">Aguilar, A. &amp; Hernández, A. (25 de Abril de 2014). Obtenido de Sugerencias de Seguridad para Sitios Web: http://www.seguridad.unam.mx/documento-id=1143</p>
+	<p style="margin-left:36.0pt;">Built With. (26 de Enero de 2016). Web Server Usage Statistics. Obtenido de http://trends.builtwith.com/Web-Server</p>
+	<p style="margin-left:36.0pt;">Aguilar, A. (21 de Agosto de 2015). Obtenido de &iquest;Qué es y cómo opera un ataque de Cross-Site Scripting (XSS)-: http://www.seguridad.unam.mx/documento-id=35</p>
+	<p style="margin-left:36.0pt;">OWASP. (3 de Febrero de 2014). Obtenido de Top 10 2013-A3-Cross-Site Scripting (XSS): https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_(XSS)</p>
+	<p style="margin-left:36.0pt;">OWASP. (21 de Agosto de 2015). Obtenido de Top 10 2013-Top 10: https://www.owasp.org/index.php/Top_10_2013-Top_10</p>
+	<p style="margin-left:36.0pt;">OWASP. (27 de Enero de 2016). Obtenido de Transport Layer Protection Cheat Sheet: https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet</p>
+</div></div>
+          </div>
+          <div class="code">
+            <h4>Revisión histórica</h4>
+            <ul>
+              <li>Liberación original: Martes, 19 Abril 2016</li>
+                <li>Última revisión: Miércoles, 25 Mayo 2016</li>
+            </ul>
+              <p>La Coordinaci&oacute;n de Seguridad de la Información/UNAM-CERT agradece el apoyo en la elaboración y revisión de este documento a:</p>
+            <ul>
+              <li><div class="field-item field-item-0">Andrés Romero Mier y Terán</div><div class="field-item field-item-1">Mario Alejandro Vasquez Martínez</div></li>
+            </ul>
+          </div>
+          <a id="Informacion" class="name"></a>
+          <div class="code">
+            <div>
+              <p>Para mayor información acerca de este documento contactar a:</p>
+              <p class="center">
+                <strong>UNAM-CERT: Equipo de Respuesta a Incidentes UNAM</strong>
+                <br>
+                <strong>Coordinaci&oacute;n de Seguridad de la Información</strong>
+                <br>
+                <strong>Dirección General de Cómputo y Tecnologías de Información y Comunicación</strong>
+                <br>
+                <strong>Universidad Nacional Autónoma de México</strong>
+                <br>
+                <strong>E-Mail:</strong> seguridad@seguridad.unam.mx
+                <br>
+                <a href="http://www.cert.org.mx">http://www.cert.org.mx</a><br>
+                <a href="../noticias/Â%2594https:/bugzilla.mozilla.org/show_bug.cgi-id=615799">http://www.seguridad.unam.mx</a><br>
+                <a href="ftp://ftp.seguridad.unam.mx">ftp://ftp.seguridad.unam.mx</a><br>
+                <strong>Tel:</strong> 56 22 81 69
+                <br>
+                <strong>Fax:</strong> 56 22 80 43
+              </p>
+            </div>
+          </div>
+        </div>
+
+	<hr>
+
+ 
+
+	</div> <!-- seccion_prin --> </div><!-- cuerpo -->
+	<!-- Termina cuerpo de la pagina -->
+<!-- inicia mapa de sitio -->
+	<div id="mapa">
+		<!--<div>
+			<div id="dsc-map">
+			<p><a href="/historico/index.html" class="white">CSI</a></p>
+			<ul>
+											<li ><a href="/historico/noticia" class="white">Noticias</a></li>
+									<li style=""><a href="/historico/documento" class="white">Documentos</a></li>
+									<li ><a href="/historico/vulnerabilidadesDB" class="white">Vulnerabilidades</a></li>
+									<li ><a href="/historico/eventos" class="white">Eventos</a></li>
+									<li ><a href="/historico/ponencias" class="white">Ponencias</a></li>
+							
+			</ul>
+			</div>
+
+			<div id="cert-map">
+			<p><a href="/historico_cert/index.html" class="white">UNAM-CERT</a></p>
+			<ul>
+								<li ><a href="http://www.cert.org.mx/estadisticas.html" class="white">Estadisticas</a></li>
+									<li ><a href="http://www.cert.org.mx/nota" class="white">Notas</a></li>
+									<li ><a href="http://www.cert.org.mx/boletin" class="white">Boletines</a></li>
+									<li ><a href="http://www.cert.org.mx/incidentes" class="white">Incidentes</a></li>
+									<li ><a href="http://www.cert.org.mx/vulnerabilidadesDB" class="white">Vulnerabilidades</a></li>
+					
+			</ul>
+			</div>
+			
+			<div id="usuario-map">
+			<p><a href="/historico/usuario-casero" class="white">Usuario Casero</a></p>
+			<ul>
+									<li ><a href="/historico/usuario-casero/eduteca/" class="white">Eduteca</a></li>
+									<li ><a href="/historico/usuario-casero/diccionario/" class="white">Diccionario</a></li>
+									<li ><a href="/historico/usuario-casero/liga-super-seg/" class="white">LigaSuperSeg</a></li>
+									<li ><a href="/historico/usuario-casero/participa/" class="white">Participa</a></li>
+									<li ><a href="/historico/usuario-casero/animaciones/" class="white">Animaciones</a></li>
+									<li ><a href="/historico/usuario-casero/delitos_informaticos/" class="white">Delitos Inform&aacute;ticos</a></li>
+						
+			</ul>
+			</div>	
+
+			<div id="becarios-map">
+			<p><a href="/historico/plan-becarios" class="white">Becarios</a></p>
+			<ul>
+									<li ><a href="/historico/plan-becarios/cursos.html" class="white">Cursos</a></li>
+									<li ><a href="/historico/plan-becarios/convocatoria.html" class="white">Convocatoria</a></li>
+									<li ><a href="/historico/plan-becarios/resultados.html" class="white">Resultados</a></li>
+									<li ><a href="/historico/plan-becarios/beneficios.html" class="white">Beneficios</a></li>
+									<li ><a href="/historico/plan-becarios/avisos.html" class="white">Avisos</a></li>
+									<li ><a href="/historico/plan-becarios/faq.html" class="white">FAQ</a></li>
+									<li ><a href="/historico/plan-becarios/coloquio.ssi" class="white">5to coloquio</a></li>
+									<li ><a href="/historico/plan-becarios/historico.ssi" class="white">Histórico</a></li>
+					
+			</ul>
+			</div>
+			
+			<div id="segtv-map">
+			<p><a href="http://tv.seguridad.unam.mx" class="white">Seguridad TV</a></p>
+			<ul>
+				<li><a href="http://tv.seguridad.unam.mx" class="white">Seguridad TV</a></li>
+				<li><a href="http://tv.seguridad.unam.mx/programacion" class="white">ProgramaciÃƒÂƒn</a></li>
+				<li><a href="http://tv.seguridad.unam.mx/galeria" class="white">GalerÃƒÂƒa</a></li>	
+				<li><a href="http://tv.seguridad.unam.mx/registro" class="white">RegÃƒÂƒÃ‚Â­strate</a></li>	
+			</ul>
+			</div>
+			
+			<div id="revista-map">
+			<p><a href="http://revista.seguridad.unam.mx/" class="white">Revista .Seguridad</a></p>
+			<ul>
+				<li><a href="http://revista.seguridad.unam.mx/" class="white"> Visitanos!</a></li> 
+			</ul>
+			</div>
+
+		</div>-->
+	</div>
+	<div id="pie">
+		<div>
+
+			<p class="right">
+			<a href="http://www.unam.mx"><img src="/historico/vistas/img/tema/logoUNAM_b.jpg" alt="Universidad Nacional Autonoma de México" width="35px" height="37px"></a>
+			<!--<a href="http://www.100.unam.mx/"><img src="tema/100Unam28.jpg" alt="100 años UNAM" width="94px" height="24px"></a>
+			<img src="tema/foot_iso27001.jpg" alt="EQA ISO 27001" width="35px" height="36px">-->
+			<!--<img src="/historico/vistas/img/tema/AENOR_iso.png" alt="AENOR LOGO" width="128px" height="37px"></a>
+			<a href="https://www.first.org/members/teams/unam-cert"><img src="/historico/vistas/img/tema/first-logo-home-2.png" alt="FIRST LOGO" width="180px" height="35px">-->
+			
+			<a class="white" href="../legal.html" >Aviso legal</a>&nbsp;|&nbsp;
+			<a class="white" href="../acerca/creditos.html">Créditos</a>&nbsp;|&nbsp;
+			<a class="white" href="/historico/acerca/staff.html">Staff</a>&nbsp;|&nbsp;
+			<!--<a class="white" href="/historico/acerca">Acerca</a>&nbsp;|&nbsp;-->
+			<!--<a class="white" href="/historico/acerca/contacto.html">Contacto</a>&nbsp;|&nbsp;-->
+			<!--<a class="white" href="ftp://ftp.seguridad.unam.mx">FTP</a>&nbsp;|&nbsp;-->
+			<a class="white" href="../adm/index.html">Administración</a><br >
+			
+			Copyright &copy; Todos los derechos reservados<br>
+
+			<!-- <a href="/historico/legal.html">Aviso Legal</a></td>-->
+			
+			<abbr title="Universidad Nacional Autonoma de México">UNAM</abbr> - <abbr title="Computer Emergency Response Team">CERT</abbr> 
+			
+			</p>
+		</div>
+		<!--<img src="http://counter.digits.com/wc/-h/usuario-casero-hidedigits" width="5" height="1" alt="">-->
+	
+	</div>
+
+        <div id="head"> <!-- Nombre de sitio y menu a rss, twitter y facebook -->
+                <h1><a href="../noticias/Â%2594https:/bugzilla.mozilla.org/show_bug.cgi-id=615799"></a></h1>
+                <a class="alerta" href="/historico/documento-id=81"><span>Manual para identificar y notificar phishing scam</span></a>
+                <ul class="servicios">
+                        <li class="tic"><a href="../acerca" class="fondo">Acerca de</a></li>
+                        <li class="tic"><a href="../acerca/contacto.html" >Contáctanos</a></li>
+                        <li class="top_rss"><a href="/historico/xml.dsc-arch=noticias_dsc" title="RSS noticias">Noticias</a></li>
+                        <li class="top_rss"><a href="/historico/xml.dsc-arch=vulne_dsc" title="RSS Alertas">Alertas</a></li>
+                        <li class="top_twitter"><a href="http://www.twitter.com/unamcert" title="Síguenos en twitter">Twitter</a></li>
+                        <li class="top_facebook"><a href="http://goo.gl/pJBb" title="Síguenos en Facebook">Facebook</a></li>
+                        <li class="tic"><a href="http://www.tic.unam.mx" title="DGTIC">www.tic.unam.mx</a></li>
+                </ul>
+                <div id="alerta"><!-- fondo menus. hecho de esta forma para integrar a IE6+--></div>
+        </div> <!--  top menus -->
+			
+
+		<script type="text/javascript"> 
+			var gaJsHost = (("https:" == document.location.protocol) - "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript"> 
+			try {
+				var pageTracker = _gat._getTracker("UA-10416116-3");
+				pageTracker._trackPageview();
+			} catch(err) {}</script>
+	</body>
+</html>
