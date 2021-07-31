@@ -1,22 +1,8 @@
 
 
-.map-container-6{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-    }
-    .map-container-6 iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-
 
 /* inicio whatsapp */
-.whatsapp {
+/* .whatsapp {
     position:fixed;
     width:60px;
     height:60px;
@@ -32,7 +18,7 @@
   
   .whatsapp-icon {
     margin-top:13px;
-  }
+  } */
 /* fin whatsapp */  
 
 /* INICIO google map */
@@ -50,3 +36,106 @@
     position:absolute;
     }
 /* FIN google map */
+
+/* INICIO acercade, timeline */
+.timeline {
+  position: relative;
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1px;
+  background-color: #50a1ff;
+}
+
+.timeline-element {
+  position: relative;
+  width: 50%;
+  padding: 1rem 0;
+  padding-right: 2.5rem;
+  text-align: right;
+}
+
+.timeline-element::before {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 1.35rem;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #50a1ff;
+  background-color: #fff;
+}
+
+.timeline-element:nth-child(even)::before {
+  right: auto;
+  left: -8px;
+}
+
+.timeline-element:nth-child(even) {
+  margin-left: 50%;
+  padding-left: 2.5rem;
+  padding-right: 0;
+  text-align: left;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::before {
+    left: 8px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .timeline-element {
+    width: 100%;
+    text-align: left;
+    padding-left: 2.5rem;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .timeline-element::before {
+    top: 1.25rem;
+    left: 1px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .timeline-element:nth-child(even) {
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .timeline-element {
+    width: 100%;
+    text-align: left;
+    padding-left: 2.5rem;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .timeline-element:nth-child(even)::before {
+    left: 1px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .timeline-element::before {
+    top: 1.25rem;
+  }
+}
+
+/* FIN   */
