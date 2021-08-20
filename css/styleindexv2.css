@@ -1,27 +1,67 @@
 
+body {
+  font-family: Josefin Sans;
+  
+}
 
 
-/* inicio whatsapp */
-/* .whatsapp {
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    z-index:100;
+
+/* PAGINA: INDEX */
+
+
+/* menu */
+.menumera {
+  font-size: 18px;
+}
+
+
+/* fin menu */
+
+/* valores */
+
+@keyframes loop {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
   }
   
-  .whatsapp-icon {
-    margin-top:13px;
-  } */
-/* fin whatsapp */  
+}
+#bienv {
+  display: flex;
+  margin: 20px;
+  height: 80px;
+  background-size: 850px;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation-duration: 3s;
+  animation-name: loop;
+  animation-iteration-count: infinite;
+ 
+}
 
-/* INICIO google map */
+
+@media screen and (max-width: 375px){
+  #bienv {
+    background-size: 300px;
+  }
+}
+
+/* fin valores */
+
+
+/* ISO */
+
+.iso {
+  padding-top: 60px;
+}
+ .iso2 {
+   margin-top: 30px;
+ }
+/* FIN ISO */
+
+/* google map */
 .map-container-6{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -35,9 +75,156 @@
     width:100%;
     position:absolute;
     }
-/* FIN google map */
+/* google map */
 
-/* INICIO acercade, timeline */
+/* contacto */
+
+.contact {
+  padding: 60px; 
+  padding-top: 120px;
+  border-top: black;
+  border-style: solid;
+  border-width: 1px;
+  border-left: white;
+  border-right: white;
+  border-bottom: white;
+
+}
+
+/* FIN contacto */
+
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: justify;
+  height: 90px;
+  padding-top: 30px;
+  margin-top: 30px;
+  background-color: #0096E0;
+  color: white;
+  align-content: space-between;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  
+}
+@media screen and (max-width: 375px){
+  .footer {
+    font-size: 10px;
+    height: 90%;
+    margin-top: 20px;
+    padding-top: 20px;
+    
+  }
+}
+
+
+#divisor {
+  width: 30px;
+  height: 25px;
+  text-align: center;
+
+}
+/* FIN FOOTER */
+
+/* FIN PAGINA: INDEX */
+
+
+/* PAGINA: SERVICIOS */
+
+.item:hover {
+  transform: translate(10px,10px);
+}
+.tarjetas {
+  padding: 3%;
+}
+
+.fotoservicios {
+height: 55%;
+width: 65%;
+border-radius: 5%;
+}
+
+/* FIN PAGINA: SERVICIOS */
+
+
+
+
+/* PAGINA: TRABAJA CON NOSOTROS */
+
+.paddingcv {
+  padding: 10%;
+}
+@media screen and (max-width: 375px){
+
+  .cvrespo {
+    
+    height: 60%;
+  }
+}
+
+
+
+
+/* FIN PAGINA: TRABAJA CON NOSOTROS */
+
+
+/* PAGINA: RECURSOS HUMANOS */
+
+
+.rrhh1 {
+  padding: 40px;
+  padding-bottom: 200px;
+  border-bottom: grey;
+  border-left: white;
+  border-top: white;
+  border-right: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  
+}
+.rrhh2 {
+  background-image: url(../img/talento.jpg); 
+  height: 250%;
+  background-size:100%; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  border-radius: 10px; 
+  border-color: black; 
+  border-style: solid; 
+  border-width: 2px;
+  
+}
+@media screen and (max-width: 375px){
+  .rrhh2 {
+    height: 120%;
+  }
+  .rrhh1 {
+    padding-bottom: 50px;
+}
+ } 
+ 
+
+/* FIN PAGINA: RECURSOS HUMANOS */
+
+
+
+/* PAGINA: ACERCA DE */
+
+
+.acercade {
+  background-color: white; 
+  border-radius: 10px; 
+  border-style: solid; 
+  border-width: 8px; 
+  border-style: groove; 
+  border-color: #8038D6;
+}
+/* INICIO Procedimiento de evaluacion y puesta en marcha de un proyecto */
 .timeline {
   position: relative;
   list-style: none;
@@ -93,49 +280,55 @@
   .timeline::before {
     left: 8px;
   }
-}
-
-@media (max-width: 767.98px) {
   .timeline-element {
     width: 100%;
     text-align: left;
     padding-left: 2.5rem;
     padding-right: 0;
   }
-}
-
-@media (max-width: 767.98px) {
   .timeline-element::before {
     top: 1.25rem;
     left: 1px;
   }
-}
-
-@media (max-width: 767.98px) {
   .timeline-element:nth-child(even) {
     margin-left: 0rem;
   }
-}
-
-@media (max-width: 767.98px) {
   .timeline-element {
     width: 100%;
     text-align: left;
     padding-left: 2.5rem;
     padding-right: 0;
   }
-}
-
-@media (max-width: 767.98px) {
   .timeline-element:nth-child(even)::before {
     left: 1px;
   }
-}
-
-@media (max-width: 767.98px) {
   .timeline-element::before {
     top: 1.25rem;
   }
 }
 
-/* FIN   */
+
+/* FIN Procedimiento de evaluacion y puesta en marcha de un proyecto */
+/* FIN  PAGINA: ACERCA DE */
+
+/* PAGINA: FORMULARIOCV */
+
+.formulariocv {
+  width: 60%;
+  justify-content: center;
+}
+/*  FIN FORMULARIOCV */
+
+
+/* PAGINA: POLITICA DE CALIDAD */
+
+.politicadecalidad {
+  background-color: white; 
+  border-radius: 10px; 
+  border-style: solid; 
+  border-width: 8px; 
+  border-style: groove; 
+  border-color: #00d4ff;
+}
+/* FIN POLITICA DE CALIDAD */
+
