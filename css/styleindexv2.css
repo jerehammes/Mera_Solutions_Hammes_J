@@ -4,6 +4,9 @@ body {
   
 }
 
+.modalmargin {
+  margin-top: 30px;
+}
 
 
 /* PAGINA: INDEX */
@@ -150,7 +153,14 @@ border-radius: 5%;
 
 /* FIN PAGINA: SERVICIOS */
 
+/* infraytecno */
 
+.margininfra {
+  margin-top: 2%;
+}
+
+
+/* fin infraytecno */
 
 
 /* PAGINA: TRABAJA CON NOSOTROS */
@@ -165,6 +175,13 @@ border-radius: 5%;
     height: 60%;
   }
 }
+
+.beneficiosmargin {
+  margin-top: 60px;
+}
+
+
+
 
 
 
@@ -206,7 +223,16 @@ border-radius: 5%;
   .rrhh1 {
     padding-bottom: 50px;
 }
- } 
+} 
+
+@media screen and (max-width: 243px){
+  .rrhh2 {
+    height: 70%;
+  }
+  .rrhh1 {
+    padding-bottom: 50px;
+}
+}
  
 
 /* FIN PAGINA: RECURSOS HUMANOS */
@@ -223,6 +249,10 @@ border-radius: 5%;
   border-width: 8px; 
   border-style: groove; 
   border-color: #8038D6;
+}
+
+.marginacerca {
+  margin-top: 5%;
 }
 /* INICIO Procedimiento de evaluacion y puesta en marcha de un proyecto */
 .timeline {
